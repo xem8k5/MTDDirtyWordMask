@@ -1,7 +1,11 @@
 name: Java CI
 
-on: [push]
-
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+  
 jobs:
   buildJar:
     runs-on: ubuntu-latest
