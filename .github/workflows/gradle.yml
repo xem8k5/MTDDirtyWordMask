@@ -22,4 +22,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: ${{ github.event.repository.name }}
-        path: build/libs/${{ github.event.repository.name }}.jar
+        target_branch: Build
+        build_dir: ./MTDDirtyWordMask/build
