@@ -101,7 +101,7 @@ public class WordMaskPlugin extends Plugin{
                 int nPhraseLength = strToReplace.length();
                 StringBuilder sb=new StringBuilder();
                 for(int j=0;j<nPhraseLength;j++) {
-                    sb.append("*");
+                    sb.append("");
                 }
                 text = text.replace(strToReplace, sb.toString());
             }
@@ -109,7 +109,7 @@ public class WordMaskPlugin extends Plugin{
                     int nPhraseLength = strToReplace.length();
                     StringBuffer sb=new StringBuffer();
                     for(int j=0;j<nPhraseLength;j++) {
-                        sb.append("*");
+                        sb.append("");
                     }
                     text = text.replace(strToReplace, sb.toString());
                 }
